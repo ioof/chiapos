@@ -20,6 +20,7 @@ learn about what proof of space is and how it works.
 ```bash
 # Requires cmake 3.14+
 
+CFLAGS="-mtune=native -march=native" CXXFLAGS="-mtune=native -march=native"
 mkdir -p build && cd build
 cmake ../
 cmake --build . -- -j 6
